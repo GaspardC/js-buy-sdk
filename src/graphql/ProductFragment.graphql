@@ -6,6 +6,14 @@ fragment ProductFragment on Product {
   descriptionHtml
   description
   handle
+   metafields(first:10){                     
+          edges {                         
+            node {                             
+              key                             
+              value                         
+            }                     
+          }                 
+        }
   productType
   title
   vendor
